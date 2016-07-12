@@ -1,4 +1,4 @@
-# hubot-spotify
+# hubot-spotify-tracks
 
 Use this script to grab an artist's top tracks from Spotify. The bot responds with the URL to stream top tracks, or if you just want to *jam out*, the bot send that artist's top track. 
 
@@ -10,13 +10,13 @@ See [`src/spotify.coffee`](src/spotify.coffee) for full documentation.
 
 In hubot project repo, run:
 
-`npm install hubot-spotify --save`
+`npm install hubot-spotify-tracks --save`
 
-Then add **hubot-spotify** to your `external-scripts.json`:
+Then add **hubot-spotify-tracks** to your `external-scripts.json`:
 
 ```json
 [
-  "hubot-spotify"
+  "hubot-spotify-tracks"
 ]
 ```
 
@@ -33,4 +33,4 @@ https://open.spotify.com/track/02M6vucOvmRfMxTXDUwRXu
 
 ## NPM Module
 
-https://www.npmjs.com/package/hubot-spotify
+https://www.npmjs.com/package/hubot-spotify-tracks
