@@ -1,5 +1,5 @@
 {
-  "name": "hubot-spotify",
+  "name": "hubot-spotify-tracks",
   "description": "grab an artist's top tracks",
   "version": "0.1.0",
   "author": "Lucas Moore <hey@thelucasmoore.com>",
@@ -9,11 +9,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-spotify.git"
+    "url": "git://github.com/hubot-scripts/hubot-spotify-tracks.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-spotify/issues"
+    "url": "https://github.com/hubot-scripts/hubot-spotify-tracks/issues"
   },
 
   "dependencies": {

@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.3.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/Lucas/Development/_post-grad/hubot-spotify',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Lucas/.npm/hubot-spotify/0.1.0/package.tgz not in flight; packing
+9 info lifecycle hubot-spotify@0.1.0~prepublish: hubot-spotify@0.1.0
+10 silly lifecycle hubot-spotify@0.1.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/Lucas/.npm/hubot-spotify/0.1.0/package.tgz',
+11 verbose tar pack   '/Users/Lucas/Development/_post-grad/hubot-spotify' ]
+12 verbose tarball /Users/Lucas/.npm/hubot-spotify/0.1.0/package.tgz
+13 verbose folder /Users/Lucas/Development/_post-grad/hubot-spotify
+14 verbose addLocalTarball adding from inside cache /Users/Lucas/.npm/hubot-spotify/0.1.0/package.tgz
+15 silly cache afterAdd hubot-spotify@0.1.0
+16 verbose afterAdd /Users/Lucas/.npm/hubot-spotify/0.1.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/Lucas/.npm/hubot-spotify/0.1.0/package/package.json written
+18 silly publish { name: 'hubot-spotify',
+18 silly publish   description: 'grab an artist\'s top tracks',
+18 silly publish   version: '0.1.0',
+18 silly publish   author: { name: 'Lucas Moore', email: 'hey@thelucasmoore.com' },
+18 silly publish   license: 'MIT',
+18 silly publish   keywords: [ 'hubot', 'spotify', 'hubot-scripts' ],
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git://github.com/hubot-scripts/hubot-spotify.git' },
+18 silly publish   bugs: { url: 'https://github.com/hubot-scripts/hubot-spotify/issues' },
+18 silly publish   dependencies: {},
+18 silly publish   peerDependencies: { hubot: '2.x' },
+18 silly publish   devDependencies:
+18 silly publish    { 'hubot-test-helper': '^1.3.0',
+18 silly publish      chai: '^2.1.1',
+18 silly publish      'coffee-script': '1.6.3',
+18 silly publish      grunt: '^0.4.5',
+18 silly publish      'grunt-cli': '^0.1.13',
+18 silly publish      'grunt-contrib-watch': '~0.6.1',
+18 silly publish      'grunt-mocha-test': '~0.12.7',
+18 silly publish      'grunt-release': '~0.11.0',
+18 silly publish      hubot: '2.x',
+18 silly publish      matchdep: '~0.3.0',
+18 silly publish      mocha: '^2.1.0',
+18 silly publish      sinon: '^1.13.0',
+18 silly publish      'sinon-chai': '^2.7.0' },
+18 silly publish   main: 'index.coffee',
+18 silly publish   scripts: { test: 'grunt test' },
+18 silly publish   readme: '# hubot-spotify\n\nUse this script to grab an artist\'s top tracks from Spotify. The bot responds with the URL to stream top tracks, or if you just want to *jam out*, the bot send that artist\'s top track. \n\nNo authorization is required, it only queries the public Spotify API. So it plays 30 second samples.\n\nSee [`src/spotify.coffee`](src/spotify.coffee) for full documentation.\n\n## Installation\n\nIn hubot project repo, run:\n\n`npm install hubot-spotify --save`\n\nThen add **hubot-spotify** to your `external-scripts.json`:\n\n```json\n[\n  "hubot-spotify"\n]\n```\n\n## Sample Interaction\n\n```\nuser>> spotify El Ten Eleven\nhubot>> https://open.spotify.com/artist/0d1j4VJ7gzAJaDslzmjTF0\nuser>> jam to beyonce\nhubot>> Beyonce\'s top hit is 7/11.\nhttps://open.spotify.com/track/02M6vucOvmRfMxTXDUwRXu\n\n```\n\n## NPM Module\n\nhttps://www.npmjs.com/package/hubot-spotify\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '8c4d1b030292edf3866ef118fb2a3e4411c3ba7a',
+18 silly publish   homepage: 'https://github.com/hubot-scripts/hubot-spotify#readme',
+18 silly publish   _id: 'hubot-spotify@0.1.0',
+18 silly publish   _shasum: 'cfe2c1fb1d17e537e53609d74129235576a083f4',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name hubot-spotify
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/hubot-spotify
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/Lucas/.npm/hubot-spotify/0.1.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/hubot-spotify
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 8:05:23 PM
+29 verbose request using bearer token for auth
+30 verbose request id e43611c5535aebda
+31 http request PUT https://registry.npmjs.org/hubot-spotify
+32 http 403 https://registry.npmjs.org/hubot-spotify
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '107',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 12 Jul 2016 02:05:22 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-den6020-DEN',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1468289122.203727,VS0,VE531',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 verbose request invalidating /Users/Lucas/.npm/registry.npmjs.org/hubot-spotify on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: you do not have permission to publish "hubot-spotify". Are you logged in as the correct user? : hubot-spotify
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid hubot-spotify
+39 verbose cwd /Users/Lucas/Development/_post-grad/hubot-spotify
+40 error Darwin 15.4.0
+41 error argv "/usr/local/Cellar/node/5.3.0/bin/node" "/usr/local/bin/npm" "publish"
+42 error node v5.3.0
+43 error npm  v3.3.12
+44 error code E403
+45 error you do not have permission to publish "hubot-spotify". Are you logged in as the correct user? : hubot-spotify
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
