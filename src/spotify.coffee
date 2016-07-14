@@ -18,6 +18,14 @@ module.exports = (robot) ->
     if artistName is "hoobastank"
       response.send "Sorry, I only search for music."
     else
+      searchNameLastfm = artistName.replace(" ", "+")
+      robot.http("http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=#{searchNameLastfm}&api_key=66e74ba0c979b3e6f0613f6830fc21a1&format=json")
+        .get() (err, res, body) ->
+          if err
+            response.send "Oh noes! #{err}"
+            return
+          data = JSON.parse body
+          response.send "#{data.artist.bio.summary"
       searchName = artistName.replace(" ", "+")
       robot.http("https://api.spotify.com/v1/search?q=#{searchName}&type=artist")
         .get() (err, res, body) ->
@@ -26,6 +34,7 @@ module.exports = (robot) ->
             return
           data = JSON.parse body
           response.send "#{data.artists.items[0].external_urls.spotify}"
+      
 
   robot.hear /jam to (.*)/i, (response) ->
     artistName = response.match[1]
