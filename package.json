@@ -1,7 +1,7 @@
 {
   "name": "hubot-spotify-tracks",
   "description": "grab an artist's top tracks",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Lucas Moore <hey@thelucasmoore.com>",
   "license": "MIT",
 
